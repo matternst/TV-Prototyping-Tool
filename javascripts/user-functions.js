@@ -182,10 +182,14 @@ $(document).on('click', '.all-user-screen', function (e) {
 
 	var $CurrentNewScreenID = "#" + $currentAllScreen;
 
+	$('#screens .screen-loaded').hide();
+
 	$('.screen-loaded').removeClass('screen-loaded');
 
 	$('#screens ' + $CurrentNewScreenID).addClass('screen-loaded');
 	$('#all-screens ' + $CurrentNewScreenID).addClass('screen-loaded');
+
+	$('#screens ' + $CurrentNewScreenID).show();
 
 	$('.modal').removeClass('active');
 });
@@ -294,8 +298,6 @@ function switchScreen(e, pressedKey) {
   }
 
   else {
-
-
       $('#screens ' + $newScreenID).addClass("screen-loading").fadeIn('fast', function() {
         $('#screens .screen-loaded').hide();
         $('.screen-loaded').removeClass('screen-loaded');
