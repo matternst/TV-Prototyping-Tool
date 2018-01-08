@@ -163,8 +163,17 @@ $(document).on('click', '.view_screens', function () {
 
 $( ".full_screen" ).on( "click", function(e) {
 	e.preventDefault();
-	$('body').toggleClass('preview-mode'); 
+	// $('body').toggleClass('preview-mode'); 
+
+	var el = document.documentElement,
+      rfs = el.requestFullscreen
+        || el.webkitRequestFullScreen
+        || el.mozRequestFullScreen
+        || el.msRequestFullscreen 
+    ;
+    rfs.call(el);
 });
+
 
 $(document).on('click', '.all-user-screen', function (e) {
 	e.preventDefault();
@@ -239,7 +248,7 @@ $(document).on( 'keydown', function(e){
       break;
     }
     case pressedKey.escape: {
-      $('body').toggleClass('preview-mode');
+      // $('body').toggleClass('preview-mode');
       break;
     }
     /////END OF NEEDING TO FINISH CODE 
@@ -247,6 +256,24 @@ $(document).on( 'keydown', function(e){
   } // switch
 
 }); // .on pressedKeydown
+
+
+
+if (document.addEventListener)
+{
+    document.addEventListener('webkitfullscreenchange', exitHandler, false);
+    document.addEventListener('mozfullscreenchange', exitHandler, false);
+    document.addEventListener('fullscreenchange', exitHandler, false);
+    document.addEventListener('MSFullscreenChange', exitHandler, false);
+}
+
+function exitHandler()
+{
+    if (document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement !== null)
+    {
+        $('body').toggleClass('preview-mode');
+    }
+}
 
 
 
@@ -268,7 +295,7 @@ function switchScreen(e, pressedKey) {
 
   else {
 
-  	
+
       $('#screens ' + $newScreenID).addClass("screen-loading").fadeIn('fast', function() {
         $('#screens .screen-loaded').hide();
         $('.screen-loaded').removeClass('screen-loaded');
