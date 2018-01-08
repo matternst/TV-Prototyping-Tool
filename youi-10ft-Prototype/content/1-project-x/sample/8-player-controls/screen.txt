@@ -1,0 +1,41 @@
+Gallerygrid: 
+
+----
+
+Title: Player Controls
+
+----
+
+Pagesettings: 
+
+----
+
+Buttonup: 
+
+----
+
+Buttondown: 
+
+----
+
+Buttonleft: 
+
+----
+
+Buttonright: 
+
+----
+
+Buttonok: 
+
+----
+
+Buttonback: full-video
+
+----
+
+Screennotes: 
+
+User can dismiss the controls with the back button.
+
+User can scrub the video using the left and right buttons.

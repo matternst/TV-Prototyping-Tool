@@ -20,19 +20,49 @@
     <script src="javascripts/respond.min.js" type="text/javascript"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="user-bg preview-mode">
     <div>
-      <section>
-        <h1 style="color:#fff;">Prototype</h1>
+      <section class="user-header clearfix">
+        <h1 class="prototype-main-header">Prototype</h1>
+        <nav class="main-nav">
+          <a class="all_projects view_screens" href="">All Screens</a>
+          <a class="full_screen" href="">Full Screen</a>
+        </nav>
       </section>
+
+      <section class="modal all_projects_modal">
+          <a href="" class="modal-select-close modal-close">X</a>
+          <div class="all_projects-header clearfix">
+            <h1>All Screens</h1>
+          </div>
       
-      <footer>
+          <div class="">
+            <div id="all-screens"></div>
+          </div>
+      </section>
+
+      <section class="intro-screen">
+        <div class="intro-screen-content">
+          <h1>Welcome to the Prototype for <span class="intro-prototype-name"></span></h1>
+          <p>Interact with the prototype by using the keys below. To view full screen on a HDMI Connected TV, enter "Full Screen" mode in Google Chrome and enable "Hide Tool Bar in Full Screen"</p>
+          <img src="/images/user/keyboard-tips.png" class="helper-image"><br><br><br><br>
+          <a href="" class="get-started-btn">Get Started</a>
+        </div>
+      </section>
+
+      <section class="screens-container">
+        <div class="non-clickable"></div>
+        <div id="screens"></div>
+      </section>
         
-      </footer>
     </div>
     <script src="javascripts/jquery.min.js" type="text/javascript"></script>
     <script src="javascripts/waypoints.min.js" type="text/javascript"></script>
     <script src="javascripts/airtable.browser.js" type="text/javascript"></script>
+
+    <script src="javascripts/config.js" type="text/javascript"></script>    
     <script src="javascripts/user-functions.js" type="text/javascript"></script>
+
+
   </body>
 </html>

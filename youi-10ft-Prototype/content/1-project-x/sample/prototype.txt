@@ -1,0 +1,17 @@
+Title: Prototype - sample
+
+----
+
+Usecase: find and play the "Jungle Book"
+
+----
+
+Releasenotes: This prototype includes a basic user flow through a lander page, product details page and a basic player.
+
+----
+
+Videourl: 
+
+----
+
+Videobgtime: 

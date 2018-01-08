@@ -1,0 +1,17 @@
+Title: You.i TV
+
+----
+
+Author: UX @ You.i TV
+
+----
+
+Description: 
+
+----
+
+Keywords: prototyping,TV Interface,UX
+
+----
+
+Copyright: © 2015-(date: Year) (link: http://getkirby.com text: Kirby)

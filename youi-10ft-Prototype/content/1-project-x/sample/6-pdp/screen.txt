@@ -1,0 +1,43 @@
+Gallerygrid: 
+
+----
+
+Title: PDP
+
+----
+
+Pagesettings: 
+
+----
+
+Buttonup: 
+
+----
+
+Buttondown: 
+
+----
+
+Buttonleft: 
+
+----
+
+Buttonright: 
+
+----
+
+Buttonok: full-video
+
+----
+
+Buttonback: lander-1
+
+----
+
+Screennotes: 
+
+User can scroll left and right to navigate the page
+
+User can select "Watch now" to start playing content
+
+Content on the right is supplemental to the main title and could contain clips and trailers.

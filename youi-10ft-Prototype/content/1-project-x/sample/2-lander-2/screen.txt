@@ -1,0 +1,41 @@
+Gallerygrid: 
+
+----
+
+Title: Lander 2
+
+----
+
+Pagesettings: 
+
+----
+
+Buttonup: 
+
+----
+
+Buttondown: lander-4
+
+----
+
+Buttonleft: lander-1
+
+----
+
+Buttonright: lander-3
+
+----
+
+Buttonok: 
+
+----
+
+Buttonback: 
+
+----
+
+Screennotes: 
+
+Basic Lander page with movie poster assets. 
+
+User can scroll left and right through a double swim lane of content.
