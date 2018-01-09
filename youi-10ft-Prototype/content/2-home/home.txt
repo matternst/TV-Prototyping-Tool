@@ -1,5 +1,0 @@
-Title: You.i Prototype
-
-----
-
-Text: Hello World
